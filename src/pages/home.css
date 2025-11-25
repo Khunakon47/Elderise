@@ -170,11 +170,10 @@
 .home-hero-section {
   margin-top: 80px;
   padding: 5rem 2rem;
-  /* background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); */
-  background: #2563eb;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
   position: relative;
   overflow: hidden;
-  
+
 }
 
 .home-hero-container {
