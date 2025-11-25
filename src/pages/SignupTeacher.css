@@ -1,0 +1,537 @@
+.signup-teacher-bg {
+  background: url("/images/bg1.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  color: #1f2937;
+}
+
+.signup-teacher-chat-container {
+  width: 650px;
+  max-width: 650px;
+  height: 85vh;
+  min-height: 650px;
+  background: white;
+  border-radius: 28px;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: signup-teacher-slideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  flex-shrink: 0;
+}
+
+/* Header */
+.signup-teacher-chat-header {
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.signup-teacher-bot-avatar {
+  width: 56px;
+  height: 56px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: signup-teacher-bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.signup-teacher-header-info h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: -0.3px;
+}
+
+.signup-teacher-header-info p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Breadcrumb */
+.signup-teacher-breadcrumb-container {
+  padding: 18px 24px;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.signup-teacher-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  gap: 4px;
+}
+
+.signup-teacher-breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #9ca3af;
+  transition: all 0.3s ease;
+}
+
+.signup-teacher-breadcrumb-item.active {
+  color: #2563eb;
+  font-weight: 700;
+  transform: scale(1.05);
+}
+
+.signup-teacher-breadcrumb-item.completed {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.signup-teacher-breadcrumb-step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  background: #e5e7eb;
+  color: #6b7280;
+  transition: all 0.3s ease;
+}
+
+.signup-teacher-breadcrumb-item.active .signup-teacher-breadcrumb-step {
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: white;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.signup-teacher-breadcrumb-item.completed .signup-teacher-breadcrumb-step {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  color: white;
+}
+
+.signup-teacher-breadcrumb-connector {
+  flex: 1;
+  height: 2px;
+  background: #e5e7eb;
+  margin: 0 4px;
+  transition: background 0.3s ease;
+}
+
+.signup-teacher-breadcrumb-item.completed ~ .signup-teacher-breadcrumb-connector {
+  background: linear-gradient(to right, #10b981, #34d399);
+}
+
+/* Chat Messages */
+.signup-teacher-chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 24px;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.signup-teacher-message {
+  display: flex;
+  gap: 12px;
+  animation: signup-teacher-slideInMessage 0.4s ease;
+}
+
+.signup-teacher-message.user {
+  flex-direction: row-reverse;
+}
+
+.signup-teacher-message-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+}
+
+.signup-teacher-message.user .signup-teacher-message-avatar {
+  background: linear-gradient(135deg, #9ca3af, #d1d5db);
+}
+
+.signup-teacher-message-content {
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.signup-teacher-message-bubble {
+  background: white;
+  padding: 14px 18px;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-size: 15px;
+  line-height: 1.7;
+  color: #1f2937;
+  word-wrap: break-word;
+  animation: signup-teacher-popIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.signup-teacher-message.user .signup-teacher-message-bubble {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  border-radius: 18px 4px 18px 18px;
+}
+
+/* Quick Reply Buttons */
+.signup-teacher-quick-replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+  animation: signup-teacher-slideInMessage 0.4s ease 0.1s both;
+}
+
+.signup-teacher-quick-reply-btn {
+  background: white;
+  border: 2px solid #e5e7eb;
+  padding: 12px 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.signup-teacher-quick-reply-btn:hover {
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: white;
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+.signup-teacher-quick-reply-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Typing Indicator */
+.signup-teacher-typing-indicator {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 18px;
+  background: white;
+  border-radius: 18px;
+  width: fit-content;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.signup-teacher-typing-indicator.active {
+  display: flex;
+  animation: signup-teacher-popIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.signup-teacher-typing-dot {
+  width: 10px;
+  height: 10px;
+  background: #9ca3af;
+  border-radius: 50%;
+  animation: signup-teacher-typing 1.4s infinite;
+}
+
+.signup-teacher-typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.signup-teacher-typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Chat Input */
+.signup-teacher-chat-input {
+  padding: 20px 24px;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.signup-teacher-input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  border-radius: 28px;
+  padding: 12px 18px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.signup-teacher-input-wrapper.recording {
+  background: #fef2f2;
+  border-color: #ef4444;
+}
+
+.signup-teacher-chat-input input {
+  flex: 1;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 15px;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.signup-teacher-chat-input input::placeholder {
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.signup-teacher-input-icon {
+  color: #9ca3af;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-teacher-input-icon:hover {
+  color: #2563eb;
+  transform: scale(1.15);
+}
+
+.signup-teacher-input-icon.recording {
+  color: #ef4444;
+  animation: signup-teacher-pulse 1.5s infinite;
+}
+
+.signup-teacher-send-btn {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  flex-shrink: 0;
+}
+
+.signup-teacher-send-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.signup-teacher-send-btn:active {
+  transform: scale(0.95);
+}
+
+.signup-teacher-send-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Completion Screen */
+.signup-teacher-completion-screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  height: 100%;
+}
+
+.signup-teacher-completion-screen.active {
+  display: flex;
+  animation: signup-teacher-fadeIn 0.5s ease;
+}
+
+.signup-teacher-completion-icon {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #10b981, #34d399);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 30px;
+  animation: signup-teacher-scaleIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+}
+
+.signup-teacher-completion-screen h2 {
+  font-size: 32px;
+  color: #1f2937;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.signup-teacher-completion-screen p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.signup-teacher-completion-btn {
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+.signup-teacher-completion-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.4);
+}
+
+.signup-teacher-completion-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Animations */
+@keyframes signup-teacher-slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes signup-teacher-slideInMessage {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes signup-teacher-popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes signup-teacher-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes signup-teacher-typing {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes signup-teacher-scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes signup-teacher-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes signup-teacher-bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Scrollbar */
+.signup-teacher-chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.signup-teacher-chat-messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.signup-teacher-chat-messages::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}
+
+.signup-teacher-chat-messages::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}

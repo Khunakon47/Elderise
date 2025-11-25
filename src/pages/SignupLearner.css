@@ -1,0 +1,413 @@
+.signuplearner-bg {
+  background: url("/images/bg1.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  color: #1f2937;
+}
+
+.signuplearner-main-container {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease;
+  height: 750px;
+}
+
+/* LEFT SECTION - Sign Up Form */
+.signuplearner-signup-section {
+  width: 55%;
+  padding: 50px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideInLeft 1s ease;
+}
+
+.signuplearner-signup-container {
+  width: 100%;
+  max-width: 450px;
+}
+
+.signuplearner-signup-container h2 {
+  font-weight: 700;
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.signuplearner-welcome-text {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Form Layout */
+.signuplearner-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.signuplearner-form-group {
+  margin-bottom: 16px;
+}
+
+.signuplearner-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.signuplearner-form-input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.signuplearner-form-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.signuplearner-password-wrapper {
+  position: relative;
+}
+
+.signuplearner-password-wrapper input {
+  padding-right: 40px;
+}
+
+.signuplearner-toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+.signuplearner-toggle-password:hover {
+  color: #3b82f6;
+}
+
+.signuplearner-password-strength {
+  height: 4px;
+  background: #e5e7eb;
+  border-radius: 2px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.signuplearner-password-strength-bar {
+  height: 100%;
+  width: 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.strength-weak {
+  width: 33%;
+  background: #ef4444;
+}
+
+.strength-medium {
+  width: 66%;
+  background: #f59e0b;
+}
+
+.strength-strong {
+  width: 100%;
+  background: #10b981;
+}
+
+.signuplearner-terms-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.signuplearner-terms-checkbox input {
+  margin-top: 0;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.signuplearner-terms-checkbox a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signuplearner-terms-checkbox label {
+  margin-bottom: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.signuplearner-terms-checkbox a:hover {
+  text-decoration: underline;
+}
+
+.signuplearner-signup-btn {
+  width: 100%;
+  background: linear-gradient(to right, #2563eb, #60a5fa);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+  transition: 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.signuplearner-signup-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+
+.signuplearner-signup-btn:active {
+  transform: translateY(0);
+}
+
+.signuplearner-divider {
+  position: relative;
+  text-align: center;
+}
+
+.signuplearner-divider::before,
+.signuplearner-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.signuplearner-divider::before {
+  left: 0;
+}
+
+.signuplearner-divider::after {
+  right: 0;
+}
+
+.signuplearner-divider span {
+  background: white;
+  padding: 0 10px;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.signuplearner-social-login {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 10px;
+}
+
+.signuplearner-social-login a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  transition: 0.3s;
+}
+
+.signuplearner-social-login a:hover {
+  background: #e5e7eb;
+  transform: scale(1.1);
+}
+
+.signuplearner-social-login img {
+  width: 22px;
+  height: 22px;
+  filter: grayscale(0.5);
+}
+
+.signuplearner-social-login a:hover img {
+  filter: grayscale(0);
+}
+
+.signuplearner-signin-text {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.signuplearner-signin-text a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signuplearner-signin-text a:hover {
+  text-decoration: underline;
+}
+
+/* RIGHT SECTION - Benefits */
+.signuplearner-benefits-section {
+  width: 45%;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: white;
+  padding: 50px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slideInRight 1s ease;
+}
+
+.signuplearner-benefits-content {
+  max-width: 380px;
+}
+
+.signuplearner-benefits-content h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.signuplearner-benefits-content h1 span {
+  color: #fbbf24;
+}
+
+.signuplearner-benefits-subtitle {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: #e9d5ff;
+  line-height: 1.6;
+}
+
+.signuplearner-benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+  animation: fadeUp 1s ease;
+}
+
+.signuplearner-benefit-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.signuplearner-benefit-text h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #fef3c7;
+}
+
+.signuplearner-benefit-text p {
+  font-size: 13px;
+  color: #e9d5ff;
+  line-height: 1.5;
+}
+
+.signuplearner-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.signuplearner-stat-item {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.signuplearner-stat-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fbbf24;
+  margin-bottom: 5px;
+}
+
+.signuplearner-stat-label {
+  font-size: 12px;
+  color: #e9d5ff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

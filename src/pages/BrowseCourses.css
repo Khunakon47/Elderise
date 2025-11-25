@@ -1,0 +1,324 @@
+/*************************************************** Browse Courses Section ****************************************************/
+.browse-courses-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 110px 24px;
+}
+
+/*************************************************** Breadcrumb Section ****************************************************/
+.browse-courses-breadcrumb {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.browse-courses-breadcrumb-item {
+  color: #6b7280;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.browse-courses-breadcrumb-item:hover {
+  color: #2563eb;
+}
+
+.browse-courses-breadcrumb-item.active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Page Title */
+.browse-courses-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 32px;
+  margin-top: 2rem;
+}
+
+/*************************************************** Content wrapper Section ****************************************************/
+.browse-courses-wrapper {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/*************************************************** Sidebar Filter Section ****************************************************/
+.browse-courses-sidebar {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 100px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.browse-courses-sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.browse-courses-sidebar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.browse-courses-sidebar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.browse-courses-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Filter Section */
+.browse-filter-section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.browse-filter-section:first-child {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+.browse-filter-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.browse-filter-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.browse-filter-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.browse-filter-header i {
+  color: #64748b;
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.browse-filter-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Custom Checkbox */
+.browse-filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.browse-filter-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.browse-checkbox-custom {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #cbd5e1;
+  border-radius: 4px;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.browse-filter-checkbox:hover .browse-checkbox-custom {
+  border-color: #2563eb;
+}
+
+.browse-filter-checkbox input:checked ~ .browse-checkbox-custom {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.browse-filter-checkbox input:checked ~ .browse-checkbox-custom::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.browse-checkbox-label {
+  font-size: 14px;
+  color: #475569;
+  user-select: none;
+}
+
+.browse-filter-checkbox:hover .browse-checkbox-label {
+  color: #1e293b;
+}
+
+/* Custom Radio */
+.browse-filter-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.browse-filter-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.browse-radio-custom {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #cbd5e1;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.browse-filter-radio:hover .browse-radio-custom {
+  border-color: #2563eb;
+}
+
+.browse-filter-radio input:checked ~ .browse-radio-custom {
+  border-color: #2563eb;
+}
+
+.browse-filter-radio input:checked ~ .browse-radio-custom::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2563eb;
+}
+
+.browse-radio-label {
+  font-size: 14px;
+  color: #475569;
+  user-select: none;
+}
+
+.browse-filter-radio:hover .browse-radio-label {
+  color: #1e293b;
+}
+
+/* Main Content */
+.browse-courses-main {
+  min-height: 500px;
+  padding: 8px;
+}
+
+/* Results Header */
+.browse-courses-results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.browse-courses-results-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.browse-courses-results-count {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Sort Dropdown */
+.browse-courses-sort {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.browse-courses-sort-select {
+  padding: 8px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #475569;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.browse-courses-sort-select:hover {
+  border-color: #cbd5e1;
+}
+
+.browse-courses-sort-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Courses Grid */
+.browse-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 3fr));
+  gap: 24px;
+}
+
+.browse-courses-grid .home-course-card {
+  width: 100%;
+}
+
+/* No Results */
+.browse-courses-no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.browse-courses-no-results h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.browse-courses-no-results p {
+  font-size: 16px;
+  color: #64748b;
+}
