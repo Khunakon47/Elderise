@@ -1196,13 +1196,13 @@ const Home = () => {
                 >
                 {/* Column 1 */}
                 <div className="home-pop-categories-column">
-                    <a href="#" className="home-pop-category-card">
+                    <a onClick={BrowseCourse} className="home-pop-category-card">
                     <span>Languages</span>
                     <svg className="home-pop-categories-arrow-icon" viewBox="0 0 24 24" fill="none">
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     </a>
-                    <a href="#" className="home-pop-category-card">
+                    <a onClick={BrowseCourse} className="home-pop-category-card">
                     <span>Business</span>
                     <svg className="home-pop-categories-arrow-icon" viewBox="0 0 24 24" fill="none">
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1212,13 +1212,13 @@ const Home = () => {
 
                 {/* Column 2 */}
                 <div className="home-pop-categories-column">
-                    <a href="#" className="home-pop-category-card">
+                    <a onClick={BrowseCourse} className="home-pop-category-card">
                     <span>Finance & Investment</span>
                     <svg className="home-pop-categories-arrow-icon" viewBox="0 0 24 24" fill="none">
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     </a>
-                    <a href="#" className="home-pop-category-card">
+                    <a onClick={BrowseCourse} className="home-pop-category-card">
                     <span>AI & Data</span>
                     <svg className="home-pop-categories-arrow-icon" viewBox="0 0 24 24" fill="none">
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1228,13 +1228,13 @@ const Home = () => {
 
                 {/* Column 3 */}
                 <div className="home-pop-categories-column">
-                    <a href="#" className="home-pop-category-card">
+                    <a onClick={BrowseCourse} className="home-pop-category-card">
                     <span>Technology</span>
                     <svg className="home-pop-categories-arrow-icon" viewBox="0 0 24 24" fill="none">
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     </a>
-                    <a href="#" className="home-pop-category-card">
+                    <a onClick={BrowseCourse} className="home-pop-category-card">
                     <span>Lifestyle</span>
                     <svg className="home-pop-categories-arrow-icon" viewBox="0 0 24 24" fill="none">
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1244,13 +1244,13 @@ const Home = () => {
 
                 {/* Column 4 */}
                 <div className="home-pop-categories-column">
-                    <a href="#" className="home-pop-category-card">
+                    <a onClick={BrowseCourse} className="home-pop-category-card">
                     <span>Health & Wellness</span>
                     <svg className="home-pop-categories-arrow-icon" viewBox="0 0 24 24" fill="none">
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     </a>
-                    <a href="#" className="home-pop-category-card">
+                    <a onClick={BrowseCourse} className="home-pop-category-card">
                     <span>Music & Art</span>
                     <svg className="home-pop-categories-arrow-icon" viewBox="0 0 24 24" fill="none">
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1260,13 +1260,13 @@ const Home = () => {
 
                 {/* Column 5 */}
                 <div className="home-pop-categories-column">
-                    <a href="#" className="home-pop-category-card">
+                    <a onClick={BrowseCourse} className="home-pop-category-card">
                     <span>Productivity</span>
                     <svg className="home-pop-categories-arrow-icon" viewBox="0 0 24 24" fill="none">
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     </a>
-                    <a href="#" className="home-pop-category-card">
+                    <a onClick={BrowseCourse} className="home-pop-category-card">
                     <span>Free Courses</span>
                     <svg className="home-pop-categories-arrow-icon" viewBox="0 0 24 24" fill="none">
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -1276,7 +1276,7 @@ const Home = () => {
 
                 {/* Column 6 */}
                 <div className="home-pop-categories-column">
-                    <a href="#" className="home-pop-category-card">
+                    <a onClick={BrowseCourse} className="home-pop-category-card">
                     <span>All Instructors</span>
                     <svg className="home-pop-categories-arrow-icon" viewBox="0 0 24 24" fill="none">
                         <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
