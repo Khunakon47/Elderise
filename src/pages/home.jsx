@@ -192,7 +192,7 @@ const Home = () => {
                 {/* Course 1 */}
                 <div className="home-course-card">
                     <div className="home-course-image">
-                    <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F006%2F159%2Fmedium_2x%2F%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A2%E0%B9%88%E0%B8%AD%E0%B8%A2_(1)_1714461196.jpg&w=1920&q=75" alt="Course thumbnail" />
+                    <img src="/course-covers/course-cover1.png" alt="Course thumbnail" />
                     </div>
                     <div className="home-course-content">
                     <div className="home-course-header">
@@ -244,7 +244,7 @@ const Home = () => {
                 {/* Course 2 */}
                 <div className="home-course-card">
                     <div className="home-course-image">
-                    <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F001%2F959%2Fmedium_2x%2F1959_banner_1._660x390_1646040573.png&w=1920&q=75" alt="Course thumbnail" />
+                        <img src="/course-covers/course-cover2.png" alt="Course thumbnail" />
                     </div>
                     <div className="home-course-content">
                     <div className="home-course-header">
@@ -296,7 +296,7 @@ const Home = () => {
                 {/* Course 3 */}
                 <div className="home-course-card">
                     <div className="home-course-image">
-                    <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F006%2F942%2Fmedium_2x%2F660x390_1750735119.jpg&w=1920&q=75" alt="Course thumbnail" />
+                        <img src="/course-covers/course-cover3.png" alt="Course thumbnail" />
                     </div>
                     <div className="home-course-content">
                     <div className="home-course-header">
@@ -348,7 +348,7 @@ const Home = () => {
                 {/* Course 4 */}
                 <div className="home-course-card">
                     <div className="home-course-image">
-                    <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F006%2F028%2Fmedium_2x%2F660x390_1708325314.png&w=1920&q=75" alt="Course thumbnail" />
+                        <img src="/course-covers/course-cover4.png" alt="Course thumbnail" />
                     </div>
                     <div className="home-course-content">
                     <div className="home-course-header">
@@ -400,7 +400,7 @@ const Home = () => {
                 {/* Course 5 */}
                 <div className="home-course-card">
                     <div className="home-course-image">
-                    <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F007%2F005%2Fmedium_2x%2F660x390_1741076892.jpg&w=1920&q=75" alt="Course thumbnail" />
+                        <img src="/course-covers/course-cover5.png" alt="Course thumbnail" />
                     </div>
                     <div className="home-course-content">
                     <div className="home-course-header">
@@ -452,7 +452,7 @@ const Home = () => {
                 {/* Course 6 */}
                 <div className="home-course-card">
                     <div className="home-course-image">
-                    <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F006%2F195%2Fmedium_2x%2F660x390_1720521579.jpg&w=1920&q=75" alt="Course thumbnail" />
+                        <img src="/course-covers/course-cover6.png" alt="Course thumbnail" />
                     </div>
                     <div className="home-course-content">
                     <div className="home-course-header">
@@ -504,7 +504,7 @@ const Home = () => {
                 {/* Course 7 */}
                 <div className="home-course-card">
                     <div className="home-course-image">
-                        <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F000%2F683%2Fmedium_2x%2F660_1646036203.png&w=1920&q=75" alt="Course thumbnail" />
+                        <img src="/course-covers/course-cover7.png" alt="Course thumbnail" />
                     </div>
 
                     <div className="home-course-content">
@@ -570,7 +570,7 @@ const Home = () => {
                 {/* Course 8 */}
                 <div className="home-course-card">
                     <div className="home-course-image">
-                        <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F006%2F597%2Fmedium_2x%2FBannerWeb-banner-660x390_1737539692.jpg&w=1920&q=75" alt="Course thumbnail" />
+                        <img src="/course-covers/course-cover8.png" alt="Course thumbnail" />
                     </div>
 
                     <div className="home-course-content">
@@ -663,8 +663,7 @@ const Home = () => {
                         {/* Course 1 */}
                         <div className="home-course-card">
                             <div className="home-course-image">
-                                <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F004%2F128%2Fmedium_2x%2F660x390_TUXSA_MBA_CC_Artificial-Intelligence-in-Business-Management_1761709965.png&w=1920&q=75" 
-                                alt="Course thumbnail" />
+                                <img src="/course-covers/course-cover9.png" alt="Course thumbnail" />
                             </div>
 
                             <div className="home-course-content">
@@ -726,8 +725,8 @@ const Home = () => {
                         {/* Course 2 */}
                         <div className="home-course-card">
                             <div className="home-course-image">
-                                <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F006%2F903%2Fmedium_2x%2F660x390_1758008854.jpg&w=1920&q=75" 
-                                alt="Course thumbnail" />
+                                <img src="/course-covers/course-cover10.png" alt="Course thumbnail" />
+                                
                             </div>
 
                             <div className="home-course-content">
@@ -787,8 +786,8 @@ const Home = () => {
                         {/* Course 3 */}
                         <div className="home-course-card">
                             <div className="home-course-image">
-                                <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F006%2F452%2Fmedium_2x%2F660x390_1757324177.jpg&w=1920&q=75" 
-                                alt="Course thumbnail" />
+                                <img src="/course-covers/course-cover11.png" alt="Course thumbnail" />
+                                
                             </div>
 
                             <div className="home-course-content">
@@ -849,8 +848,7 @@ const Home = () => {
                         {/* Course 4 */}
                         <div className="home-course-card">
                             <div className="home-course-image">
-                                <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F007%2F361%2Fmedium_2x%2FBannerWeb-banner-660x390_1757574376.jpg&w=1920&q=75" 
-                                alt="Course thumbnail" />
+                                <img src="/course-covers/course-cover12.png" alt="Course thumbnail" />
                             </div>
 
                             <div className="home-course-content">
@@ -928,7 +926,7 @@ const Home = () => {
                         {/* Course 1 */}
                         <div className="home-course-card">
                             <div className="home-course-image">
-                                <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F007%2F686%2Fmedium_2x%2FBannerWeb-banner-660x390_1759907719.jpg&w=1920&q=75" alt="Course thumbnail" />
+                                <img src="/course-covers/course-cover13.png" alt="Course thumbnail" />
                             </div>
                             <div className="home-course-content">
                                 <div className="home-course-header">
@@ -984,7 +982,7 @@ const Home = () => {
                         {/* Course 2 */}
                         <div className="home-course-card">
                             <div className="home-course-image">
-                                <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F007%2F687%2Fmedium_2x%2FWeb-banner-660x390_1759908846.jpg&w=1920&q=75" alt="Course thumbnail" />
+                                <img src="/course-covers/course-cover14.png" alt="Course thumbnail" />
                             </div>
                             <div className="home-course-content">
                                 <div className="home-course-header">
@@ -1040,7 +1038,7 @@ const Home = () => {
                         {/* Course 3 */}
                         <div className="home-course-card">
                             <div className="home-course-image">
-                                <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F007%2F688%2Fmedium_2x%2FBannerWeb-banner-660x390_1759917333.jpg&w=1920&q=75" alt="Course thumbnail" />
+                                <img src="/course-covers/course-cover15.png" alt="Course thumbnail" />
                             </div>
 
                             <div className="home-course-content">
@@ -1103,7 +1101,7 @@ const Home = () => {
                         {/* Course 4 */}
                         <div className="home-course-card">
                             <div className="home-course-image">
-                                <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F007%2F689%2Fmedium_2x%2FBannerWeb-banner-660x390_1759910835.jpg&w=1920&q=75" alt="Course thumbnail" />
+                                <img src="/course-covers/course-cover16.png" alt="Course thumbnail" />
                             </div>
 
                             <div className="home-course-content">
@@ -1317,7 +1315,7 @@ const Home = () => {
                     {/* Course 1 – NEW CONTENT */}
                     <div className="home-course-card">
                         <div className="home-course-image">
-                            <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F006%2F952%2Fmedium_2x%2F660x390_1756267229.jpg&w=1920&q=75" alt="Course thumbnail" />
+                            <img src="/course-covers/course-cover17.png" alt="Course thumbnail" />
                         </div>
 
                         <div className="home-course-content">
@@ -1378,7 +1376,7 @@ const Home = () => {
                     {/* Course 2 – NEW CONTENT */}
                     <div className="home-course-card">
                         <div className="home-course-image">
-                            <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F007%2F452%2Fmedium_2x%2FBannerWeb-banner-660x390_1755865182.jpg&w=1920&q=75" alt="Course thumbnail" />
+                            <img src="/course-covers/course-cover18.png" alt="Course thumbnail" />
                         </div>
 
                         <div className="home-course-content">
@@ -1439,7 +1437,7 @@ const Home = () => {
                     {/* Course 3 – NEW CONTENT */}
                     <div className="home-course-card">
                         <div className="home-course-image">
-                            <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F007%2F459%2Fmedium_2x%2F660x390_1754023548.jpg&w=1920&q=75" alt="Course thumbnail" />
+                            <img src="/course-covers/course-cover19.png" alt="Course thumbnail" />
                         </div>
 
                         <div className="home-course-content">
@@ -1500,7 +1498,7 @@ const Home = () => {
                     {/* Course 4 – NEW CONTENT */}
                     <div className="home-course-card">
                         <div className="home-course-image">
-                            <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F005%2F320%2Fmedium_2x%2FBannerWeb-banner-660x390_1706009103.jpg&w=1920&q=75" alt="Course thumbnail" />
+                            <img src="/course-covers/course-cover20.png" alt="Course thumbnail" />
                         </div>
 
                         <div className="home-course-content">
@@ -1578,7 +1576,7 @@ const Home = () => {
                     {/* Course 1 */}
                     <div className="home-course-card">
                         <div className="home-course-image">
-                        <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F007%2F614%2Fmedium_2x%2F660x390_(8)_1758532797.jpg&w=1920&q=75" alt="Course thumbnail" />
+                            <img src="/course-covers/course-cover1.png" alt="Course thumbnail" />
                         </div>
                         <div className="home-course-content">
                         <div className="home-course-header">
@@ -1630,7 +1628,7 @@ const Home = () => {
                     {/* Course 2 */}
                     <div className="home-course-card">
                         <div className="home-course-image">
-                        <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F007%2F656%2Fmedium_2x%2F660x390_(2)_1758857915.jpg&w=1920&q=75" alt="Course thumbnail" />
+                            <img src="/course-covers/course-cover2.png" alt="Course thumbnail" />
                         </div>
                         <div className="home-course-content">
                         <div className="home-course-header">
@@ -1682,7 +1680,7 @@ const Home = () => {
                     {/* Course 3 */}
                     <div className="home-course-card">
                         <div className="home-course-image">
-                        <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F006%2F378%2Fmedium_2x%2F660x390-3_1738318677.png&w=1920&q=75" alt="Course thumbnail" />
+                            <img src="/course-covers/course-cover3.png" alt="Course thumbnail" />
                         </div>
                         <div className="home-course-content">
                         <div className="home-course-header">
@@ -1734,7 +1732,7 @@ const Home = () => {
                     {/* Course 4 */}
                     <div className="home-course-card">
                         <div className="home-course-image">
-                        <img src="https://www.skilllane.com/_next/image?url=https%3A%2F%2Fresource.skilllane.com%2Fcourses%2Fhighlight_imgs%2F000%2F006%2F044%2Fmedium_2x%2F1708569328355_1708569434.jpg&w=1920&q=75" alt="Course thumbnail" />
+                            <img src="/course-covers/course-cover4.png" alt="Course thumbnail" />
                         </div>
                         <div className="home-course-content">
                         <div className="home-course-header">

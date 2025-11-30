@@ -11,7 +11,7 @@ function SignIn() {
   };
 
   const gotohome = () => {
-    navigate("/home");
+    navigate("/");
   };
 
   const [activeTab, setActiveTab] = useState("email");

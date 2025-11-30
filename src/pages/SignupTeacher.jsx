@@ -425,7 +425,7 @@ const SignupTeacher = () => {
             </p>
             <button
               className="signup-teacher-completion-btn"
-              onClick={() => (window.location.href = "/")}
+              onClick={() => (window.location.href = "/SignIn")}
             >
               <i className="fa-solid fa-home"></i> Go to Sign In
             </button>
