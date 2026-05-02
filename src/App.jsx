@@ -14,14 +14,14 @@ function App() {
     <>
       <ScrollToTop />
       <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/Signin" element={<SignIn/>} />
-      <Route path="/choose-role" element={<ChooseRole/>} />
-      <Route path="/signup-learner" element={<SignupLearner/>} />
-      <Route path="/signup-teacher" element={<SignupTeacher/>} />
-      <Route path="/CourseDetail" element={<CourseDetail/>} />
-      <Route path="/BrowseCourses" element={<BrowseCourses/>} />
-    </Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/Signin" element={<SignIn/>} />
+        <Route path="/choose-role" element={<ChooseRole/>} />
+        <Route path="/signup-learner" element={<SignupLearner/>} />
+        <Route path="/signup-teacher" element={<SignupTeacher/>} />
+        <Route path="/CourseDetail" element={<CourseDetail/>} />
+        <Route path="/BrowseCourses" element={<BrowseCourses/>} />
+      </Routes>
     </>
   );
 }
